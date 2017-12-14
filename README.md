@@ -1,8 +1,8 @@
 # design-1
 
-呜呜呜我居然可以在线看自己的项目了感恩↓↓↓
 ---
-https://blackrock33.github.io/design-1/find-realtor.html
+呜呜呜我居然可以在线看自己的[项目](https://blackrock33.github.io/design-1/find-realtor.html)了感恩
+
 
 Github提供了Github Pages的服务来帮助你为自己的项目提供主页 。
 
@@ -12,4 +12,6 @@ Github提供了Github Pages的服务来帮助你为自己的项目提供主页 �
 
 项目主页 ，顾名思义，就是你项目的主页，本来设计的初衷是为你的项目编写介绍文档，不过Github只提供对静态内容的托管。
 
-如果需要添加评论，可以使用disqus的服务，而和微博，flickr等集成都有现成的JavaScript片段，这里也不做详细讨论。
+如果需要添加评论，可以使用disqus的服务，而和微博，flickr等集成都有现成的JavaScript片段。
+
+最后 感谢大佬[Qiu Juntao](https://github.com/abruzzi)的教程。
