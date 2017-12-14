@@ -1,0 +1,137 @@
+@import "compass/reset";
+@import "icomoon";
+
+$post-bg-color:#efefef;
+$body-color: #986100;
+$gray-text-color: #373737;
+$text-color:gray;
+$twitter-color:#6C0000;
+$break-small: 320px;
+$break-large: 1024px;
+
+@mixin border-radius($tmp:2px){
+  border-radius: $tmp;
+}
+@mixin clearfix {
+  clear:both;
+}
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1){@content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+.information {
+  background-color: red;
+}
+@media screen and (min-width: 1024px) {
+  .information {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 1024px){
+
+}
+
+
+.numbers{
+  width: 60em;
+  margin: 2em auto;
+  background: $post-bg-color;
+  li {
+    float: left;
+    width: 25%;
+    @include respond-to(medium-screens) {
+      width: 50%;
+    }
+    @include respond-to(handhelds) {
+      float:none;
+      width: 100%;
+    }
+    box-sizing: border-box;
+    padding: 1.5em 3em;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-in;
+    h4 {
+      text-transform: uppercase;
+      color: $gray-text-color;
+    }
+    p {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    &:hover {
+      border-bottom: 3px solid $twitter-color;
+    }
+  }
+  @include clearfix;
+}
+.avator{
+  width: 3em;
+  height: 3em;
+  @include border-radius(100%);
+  position: absolute;
+  top:2em;
+  left: 2em;
+}
+.post {
+  position: relative;
+  text-align: left;
+  padding: 2em;
+  background: $post-bg-color;
+  border-bottom: 1px solid $body-color;
+
+  .content {
+    margin-left: 4em;
+    span {
+      margin-right: 1em;
+      &.name {
+        font-weight: bold;
+      }
+      &.account {
+        font-weight: lighter;
+        color: $gray-text-color;
+      }
+      &.time {
+        color: $gray-text-color;
+        float: right;
+        margin-right: 0;
+      }
+    }
+  }
+  header {
+    margin-bottom: 1em;
+  }
+  section {
+    margin-bottom: 1em;
+    p {
+      line-height: 1.4;
+      font-weight: normal;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+  footer {
+    a {
+      text-decoration: none;
+      color: $gray-text-color;
+      margin-right: 1em;
+      &:last-child {
+        float: right;
+        margin-right: 0;
+      }
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+}

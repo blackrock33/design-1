@@ -1,0 +1,273 @@
+/* line 1, ../sass/animate.scss */
+.typing {
+  background-color: #CBADDA;
+  width: 220px;
+  height: 220px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+/* line 8, ../sass/animate.scss */
+.typing .typewritter {
+  position: absolute;
+  background-image: url("../imgs/animate/typewritter.png");
+  background-size: cover;
+  width: 144px;
+  height: 107px;
+  top: 120px;
+  left: 38px;
+  z-index: 3;
+}
+/* line 18, ../sass/animate.scss */
+.typing .handlebar {
+  position: absolute;
+  background-image: url("../imgs/animate/handlebar.png");
+  background-size: cover;
+  width: 169px;
+  height: 28px;
+  top: 108px;
+  left: 26px;
+  z-index: 1;
+}
+/* line 28, ../sass/animate.scss */
+.typing .paper {
+  position: absolute;
+  background-image: url("../imgs/animate/paper.png");
+  background-size: cover;
+  width: 127px;
+  height: 106px;
+  top: 50px;
+  left: 40px;
+  z-index: 2;
+}
+
+@keyframes handlebar {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes paper {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  35% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  55% {
+    transform: translateY(-18px);
+  }
+  60% {
+    transform: translateY(-30px);
+  }
+  65% {
+    transform: translateY(-28px);
+  }
+  80% {
+    transform: translateY(-40px);
+  }
+  85% {
+    transform: translateY(-28px);
+  }
+  90% {
+    transform: translateY(-45px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* line 94, ../sass/animate.scss */
+.handlebar {
+  animation: handlebar .5s ease-in infinite;
+}
+
+/* line 97, ../sass/animate.scss */
+.paper {
+  animation: paper 2s ease-out infinite;
+}
+
+/* 2 */
+/* line 101, ../sass/animate.scss */
+.mag {
+  background-color: #6A9ACE;
+  width: 220px;
+  height: 220px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 109, ../sass/animate.scss */
+.mag .magazine {
+  position: absolute;
+  background-image: url("../imgs/animate/bg.png");
+  background-size: cover;
+  width: 139px;
+  height: 157px;
+  top: 36px;
+  left: 30px;
+}
+/* line 117, ../sass/animate.scss */
+.mag .picture {
+  position: absolute;
+  background-image: url("../imgs/animate/paper.png");
+  background-size: cover;
+  width: 94px;
+  height: 88px;
+  top: 94px;
+  left: 108px;
+}
+/* line 126, ../sass/animate.scss */
+.mag .yellow-bar {
+  position: absolute;
+  background-image: url("../imgs/animate/handlebar.png");
+  background-size: cover;
+  width: 27px;
+  height: 9px;
+  top: 116px;
+  left: 166px;
+}
+/* line 135, ../sass/animate.scss */
+.mag .blue-bar {
+  position: absolute;
+  background-image: url("../imgs/animate/typewritter.png");
+  background-size: cover;
+  width: 25px;
+  height: 14px;
+  top: 154px;
+  left: 164px;
+}
+
+@keyframes right-jump {
+  0% {
+    top: -50px;
+    left: -150px;
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-20deg);
+  }
+  18% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(-3deg);
+  }
+  25% {
+    top: 36px;
+    left: 30px;
+    transform: rotate(5deg);
+  }
+  30% {
+    top: 36px;
+    left: 30px;
+    transform: rotate(0deg);
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes left-jump {
+  0% {
+    top: 100px;
+    left: 260px;
+    transform: rotate(0);
+  }
+  40% {
+    top: 100px;
+    left: 260px;
+    transform: rotate(8deg);
+  }
+  44% {
+    top: 95px;
+    left: 230px;
+    transform: rotate(6deg);
+  }
+  48% {
+    top: 90px;
+    left: 200px;
+    transform: rotate(4deg);
+  }
+  52% {
+    top: 85px;
+    left: 170px;
+    transform: rotate(2deg);
+  }
+  56% {
+    top: 90px;
+    left: 140px;
+    transform: rotate(0deg);
+  }
+  60% {
+    top: 96px;
+    left: 106px;
+    transform: rotate(-3deg);
+  }
+  65% {
+    top: 94px;
+    left: 108px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 94px;
+    left: 108px;
+    display: none;
+  }
+}
+@keyframes bar {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(1);
+  }
+  100% {
+    display: none;
+  }
+}
+/* line 236, ../sass/animate.scss */
+.magazine {
+  animation: right-jump 2s ease-in-out infinite;
+  transform-origin: bottom left;
+}
+
+/* line 240, ../sass/animate.scss */
+.picture {
+  animation: left-jump 2s ease-in-out infinite;
+}
+
+/* line 243, ../sass/animate.scss */
+.yellow-bar {
+  animation: bar 2s ease infinite;
+}
+
+/* line 246, ../sass/animate.scss */
+.blue-bar {
+  animation: bar 2s ease infinite;
+}
