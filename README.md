@@ -2,7 +2,9 @@
 
 ---
 呜呜呜我居然可以在线看自己的[项目](https://blackrock33.github.io/design-1/find-realtor.html)了感恩
-
+[动画](https://blackrock33.github.io/design-1/animate.html)
+[三周介绍](https://blackrock33.github.io/design-1/3weeks.html)
+[模仿推特](https://blackrock33.github.io/design-1/tweet.html)
 
 Github提供了Github Pages的服务来帮助你为自己的项目提供主页 。
 
